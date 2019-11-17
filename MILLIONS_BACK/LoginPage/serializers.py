@@ -1,4 +1,4 @@
-from .models import Login
+from LoginPage.models import Login
 from rest_framework import serializers
 
 class LoginSerializer(serializers.ModelSerializer):

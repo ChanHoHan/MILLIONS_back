@@ -5,6 +5,6 @@ from LoginPage import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('timer/', include('TimerPage.urls')),
-    path('login/', include('LoginPage.urls')),
+    path('', include('TimerPage.urls')),
+    path('', include('LoginPage.urls')),
 ]

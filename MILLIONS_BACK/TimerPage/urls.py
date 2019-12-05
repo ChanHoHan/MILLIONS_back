@@ -5,6 +5,8 @@ from TimerPage import views
 router = DefaultRouter()
 router.register('timer', views.TimerViewSet)
 
+print("MILLIONS_timer")
+
 urlpatterns = [
     path('', include(router.urls)),
 ]

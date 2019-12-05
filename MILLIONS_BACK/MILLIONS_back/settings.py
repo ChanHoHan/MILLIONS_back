@@ -32,11 +32,6 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-<<<<<<< HEAD
-
-=======
-     
->>>>>>> 56797fe8a0d67fa41311b199305280faf6a5c7b3
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',

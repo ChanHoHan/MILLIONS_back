@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3^auci_2l4qnh4&004sqz=(2&$2nj+yg4(12o7m369a=z^2@h5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -28,7 +28,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'TimerPage',
-    'UserManage',
 ]
 
 REST_FRAMEWORK = {

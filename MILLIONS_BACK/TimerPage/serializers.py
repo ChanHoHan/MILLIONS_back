@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 
 class TimerSerializer(serializers.ModelSerializer):
-    timerOwner = serializers.ReadOnlyField(source='author.username')
+    timerOwner = serializers.ReadOnlyField(source='user.username')
 
     class Meta:
         model = Timer

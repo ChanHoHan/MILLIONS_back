@@ -13,3 +13,4 @@
    - 회원가입 페이지 : 0/rest-auth/registration/
    - 유저정보 : 0/admin
    - 타이머 관리 : 0/timer-admin
+   - $ pip install -r requirements.txt  <- 해당 명령어로 패키지 다운받아주세요.

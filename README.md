@@ -47,8 +47,13 @@ CORS_ALLOW_CREDENTIALS = True
 ```
 ### ps. (Configuration) 
 
-| CORS_ORIGIN_ALLOW_ALL = True | WhiteList가 사용되지 않을 것임 |
-| CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT', ] | CORS을 허용할 HTTP METHOD 지정|
-| CORS_ALLOW_CREDENTIALS = True | 쿠키가 HTTP에 저장되어 CORS 전송 |
-
+CORS_ORIGIN_ALLOW_ALL = True\
+: WhiteList가 사용되지 않을 것임
+\
+CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT', ]\
+: CORS을 허용할 HTTP METHOD 지정
+\
+CORS_ALLOW_CREDENTIALS = True\
+쿠키가 HTTP에 저장되어 CORS 전송 
+\
 > 참고: https://github.com/adamchainz/django-cors-headers

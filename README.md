@@ -23,23 +23,32 @@ pip install django-cors-headers
 
 
 * settins.py에 INSTALLED_APPS에 'corsheaders'를 추가
+```
 INSTALLED_APPS = [
     ...
     'corsheaders',
     ...
 ]
+```
 
 * settings.py의 MIDDLEWARE에 다음과 같이 추가
-MIDDLEWARE = [  # Or MIDDLEWARE_CLASSES on Django < 1.10
+```
+MIDDLEWARE = [
     ...
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     ...
 ]
-
+```
+* 마지막으로 아래 코드도 settings.py에 추가요망 (필수 X)
+```
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+```
 ### ps. (Configuration) 
-- CORS_ORIGIN_ALLOW_ALL = True -> WhiteList가 사용되지 않을 것임.
-- CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT', ] -> CORS을 허용할 HTTP METHOD지정
-- CORS_ALLOW_CREDENTIALS = True -> 쿠키가 HTTP에 저장되어 CORS 전송
 
-참고: https://github.com/adamchainz/django-cors-headers
+| CORS_ORIGIN_ALLOW_ALL = True | WhiteList가 사용되지 않을 것임 |
+| CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT', ] | CORS을 허용할 HTTP METHOD 지정|
+| CORS_ALLOW_CREDENTIALS = True | 쿠키가 HTTP에 저장되어 CORS 전송 |
+
+> 참고: https://github.com/adamchainz/django-cors-headers

@@ -15,9 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     #####
 
-    'corsheaders',
+    'corsheaders', # Cors Security Issue 해결을 위함
 ]
 
 ##
@@ -60,7 +58,7 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware', # Cors Security Issue 해결을 위함
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -140,6 +138,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True # 모든 ORIGIN에 전송 허용
+CORS_ALLOW_CREDENTIALS = True # 전송되는 HTTP 프로토콜에 Token도 같이 전송
 

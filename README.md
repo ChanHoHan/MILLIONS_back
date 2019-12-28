@@ -37,7 +37,7 @@ MIDDLEWARE = [  # Or MIDDLEWARE_CLASSES on Django < 1.10
     ...
 ]
 
-* ps. (Configuration) 
+### ps. (Configuration) 
 - CORS_ORIGIN_ALLOW_ALL = True -> WhiteList가 사용되지 않을 것임.
 - CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT', ] -> CORS을 허용할 HTTP METHOD지정
 - CORS_ALLOW_CREDENTIALS = True -> 쿠키가 HTTP에 저장되어 CORS 전송

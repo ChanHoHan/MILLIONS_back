@@ -13,11 +13,8 @@
    - 회원가입 페이지 : 0/rest-auth/registration/
    - 유저정보 : 0/admin
    - 타이머 관리 : 0/timer-admin
-<<<<<<< HEAD
 
-=======
    - $ pip install -r requirements.txt  <- 해당 명령어로 패키지 다운받아주세요.
->>>>>>> e00da7f201c163e2f9f0c15760f259bbfe77bddd
 
 ## Axios 연결시 Cross-Orgin-Resource-Sharing Issue 해결방법
 이러한 이슈(오류)를 해결해주는 패키지가 정의되어 있으므로, 이걸 이용하면 해결됨.
@@ -27,41 +24,24 @@ pip install django-cors-headers
 
 
 * settins.py에 INSTALLED_APPS에 'corsheaders'를 추가
-<<<<<<< HEAD
-=======
 ```
->>>>>>> e00da7f201c163e2f9f0c15760f259bbfe77bddd
 INSTALLED_APPS = [
     ...
     'corsheaders',
     ...
 ]
-<<<<<<< HEAD
-
-* settings.py의 MIDDLEWARE에 다음과 같이 추가
-MIDDLEWARE = [  # Or MIDDLEWARE_CLASSES on Django < 1.10
-=======
 ```
 
 * settings.py의 MIDDLEWARE에 다음과 같이 추가
 ```
 MIDDLEWARE = [
->>>>>>> e00da7f201c163e2f9f0c15760f259bbfe77bddd
     ...
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     ...
 ]
-<<<<<<< HEAD
-
-### ps. (Configuration) 
-- CORS_ORIGIN_ALLOW_ALL = True -> WhiteList가 사용되지 않을 것임.
-- CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT', ] -> CORS을 허용할 HTTP METHOD지정
-- CORS_ALLOW_CREDENTIALS = True -> 쿠키가 HTTP에 저장되어 CORS 전송
-
-참고: https://github.com/adamchainz/django-cors-headers
-=======
 ```
+
 * 마지막으로 아래 코드도 settings.py에 추가요망 (필수 X)
 ```
 CORS_ORIGIN_ALLOW_ALL = True
@@ -79,4 +59,3 @@ CORS_ALLOW_CREDENTIALS = True\
 쿠키가 HTTP에 저장되어 CORS 전송 
 \
 > 참고: https://github.com/adamchainz/django-cors-headers
->>>>>>> e00da7f201c163e2f9f0c15760f259bbfe77bddd

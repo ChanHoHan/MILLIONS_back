@@ -5,6 +5,9 @@
 
 ## 백엔드
 
+   - $ pip install -r requirements.txt  <- 해당 명령어로 패키지 다운받아주세요.
+       - * 주의사항 : 꼭 가상환경에서 실행할것!! 본인 컴퓨터에 있는 버전들과 충돌을 일으킬 수 있음.
+
    - local 구동
     1. python manage.py runserver 
    - front랑 연결시
@@ -14,9 +17,8 @@
    - 유저정보 : 0/admin
    - 타이머 관리 : 0/timer-admin
 
-   - $ pip install -r requirements.txt  <- 해당 명령어로 패키지 다운받아주세요.
-
 ## Axios 연결시 Cross-Orgin-Resource-Sharing Issue 해결방법
+##  내용 코드에 반영 되어 있음.
 이러한 이슈(오류)를 해결해주는 패키지가 정의되어 있으므로, 이걸 이용하면 해결됨.
 
 * 먼저 'django-cors-headers' 패키지를 설치

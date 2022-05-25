@@ -18,7 +18,7 @@ matplotlib==3.0.1
 mccabe==0.6.1
 numpy==1.15.4
 oauthlib==3.1.0
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.4.4
 pylint-django==2.0.12
 pylint-plugin-utils==0.6
